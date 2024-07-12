@@ -64,7 +64,7 @@ nav {
     background-color: #f1f4f4;
     padding: 50px;
     box-shadow: 0px 2px 3px rgba(0,54,72, .2);
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 #main_photo{
@@ -130,7 +130,7 @@ nav {
 }
 
 
-/*           Projects                  */
+/*                          Projects                                */
 
 .projects_heading {
     display: flex;
@@ -152,6 +152,37 @@ nav {
     margin: auto 20px;
     width: 275px;
     border-bottom: solid 1px #00ABE4;
+}
+
+
+.main_container {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.slider_wrapper .image_list {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 18px;
+}
+
+.slider_wrapper .image_list .image_item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.image_item {
+    /* border: 1px solid red; */
+}
+
+.container {
+    /* border: 1px solid black; */
+    max-width: 1200px;
+    width: 95%;
 }
 
 
