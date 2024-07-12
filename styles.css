@@ -63,6 +63,8 @@ nav {
 .hero_section {
     background-color: #f1f4f4;
     padding: 50px;
+    box-shadow: 0px 2px 3px rgba(0,54,72, .2);
+    margin-bottom: 40px;
 }
 
 #main_photo{
@@ -127,6 +129,30 @@ nav {
     line-height: 50px;
 }
 
+
+/*           Projects                  */
+
+.projects_heading {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 50px;
+}
+
+.p_header {
+    font-size: 15px;
+    margin: auto 20px;
+    font-weight: 100;
+    color:#003648;
+}
+
+
+.header_line {
+    opacity: .3;
+    margin: auto 20px;
+    width: 275px;
+    border-bottom: solid 1px #00ABE4;
+}
 
 
 
