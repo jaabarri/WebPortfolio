@@ -5,78 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/f19b1cb9b4.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Jacob's Web Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
             <img id="nav_logo" src="./assets/nav_logo3.png" alt="Jacob Barriga-Luis' monogram logo">
-            <p id="logo_text">Jacob Barriga-Luis</p>
+            <p id="logo-text">Jacob B.</p>
 
-            <ul id="nav_links">
+            <div class="toggle-bar"> 
+                <div class="toggle-top-bar"></div>
+                <div class="toggle-bottom-bar"></div>
+            </div>
+
+            <!-- <ul id="nav_links">
                 <li class="list_item">home</li>
                 <li class="list_item">projects</li>
                 <li class="list_item">about</li>
                 <li class="list_item">contact</li>
-            </ul>
+            </ul> -->
         </nav>
     </header>
 
-    <!-- <div class="custom_div_border"></div> -->
+
+    
+
 
     <main> 
 
-        <section class="hero_section">
-            <div class="hero_content">
-                <div class="hero_heading">
-                    <h1 class="heading_1"> <span class="hero_intro">Hi, </span> <br> I am Jacob Barriga-Luis<h1>
-                    <h2 class="heading_2">Front End Developer</h2>
-
-                    <a class="about_btn" href="#">About Me</a>
-                    <div class="socmed_icons">
-                        <div class="circle_icons">
-                            <a href="https://www.linkedin.com/in/jacob-barriga-luis/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px; color:#00ABE4;"></i></a>
-                        </div>
-                        <div class="circle_icons">
-                            <a href="https://github.com/jaabarri" target="_blank"><i class="fa fa-github" style="font-size:24px; color:#00ABE4;"></i></a>
-                        </div>
-                    </div>
-
+        <section class="hero-section">
+            <div class="hero-container"> 
+                <div class="container-left">
+                    <h1> Hi My Name is </h1>
+                    <h2> Jacob Barriga-Luis </h2>
                 </div>
 
-                <img id="main_photo" src="assets/main_photo.png" alt="Jacob at his graduation smiling">
-            </div>
-
-        </section class="project_section">
-
-            <div class="projects_heading">
-                <div class="header_line"></div>
-                <h3 class="p_header">some of my projects</h3>
-                <div class="header_line"></div>
-            </div>
-
-            <div class="main_container">
-                <div class="container">
-                    <button id="prev_slide" class="slide_button"><i class="fa-solid fa-chevron-left"></i></i></button>
-                    <div class="slider_wrapper">
-                        <div class="image_list">
-                            <img class="image_item" src="/assets/image_placeholder.png" alt="Placeholder image text">
-                            <img class="image_item" src="/assets/image_placeholder.png" alt="Placeholder image text">
-                            <img class="image_item" src="/assets/image_placeholder.png" alt="Placeholder image text">
-                            <img class="image_item" src="/assets/image_placeholder.png" alt="Placeholder image text">
-                            <img class="image_item" src="/assets/image_placeholder.png" alt="Placeholder image text">
-                            <img class="image_item" src="/assets/image_placeholder.png" alt="Placeholder image text">
-                        </div>
-                    </div>
-                    <button id="next_slide" class="slide_button"><i class="fa-solid fa-chevron-right"></i></i></button>
+                <div class="container-right">
+                    <canvas id="circle-gradient" width=300 height=300></canvas>
+                    <img src="./assets/cover_photo.png" alt="Portrait Photo of Jacob">
                 </div>
+
+                <h3>Front-End Developer</h3>
+                <p>I am a passionate junior front-end developer based in the Bay Area, with a degree in Art & Design: Games and Playable Media from UCSC. I'm deeply committed to creating visually stunning websites and engaging designs, and I am always eager to learn and grow in the field.</p>
             </div>
-
-
-
-        <section> 
-
         </section>
+
+
+
     </main>
 
     <footer></footer>
