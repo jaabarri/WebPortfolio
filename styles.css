@@ -132,7 +132,7 @@ nav {
 .hero-container h1 {
     margin: .55em 0em .35em 0em;
     font-weight: 100;
-    font-size: 1.15em;
+    font-size: 1.15rem;
 }
 
 .hero-container h2 {
@@ -145,7 +145,7 @@ nav {
 .hero-container h3 {
     margin: 2em 0em .35em 0em;
     color: #00abe4;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 100;
 }
 
@@ -182,7 +182,7 @@ nav {
 } 
 
 .hero-container p {
-    font-size: 1em;
+    font-size: 1.05rem;
     font-weight: 100;
     padding: .5em;
     margin: 1em 0em;
@@ -200,9 +200,18 @@ nav {
 
 
 .about-section h4 {
-    
-
+    text-align: center;
+    margin: 2em 0 .5em 0;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #00abe4;
 }
+
+.bottom-border {
+    width: 70%;
+    display: block;
+    margin: 0em auto;
+    border-top: #00abe4 .5px solid;
 
 
 
