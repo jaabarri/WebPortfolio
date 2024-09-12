@@ -102,11 +102,15 @@ const projects_render = () => {
         projects_html += `
         <div class="projects">
             <div>
-                <h3>${p.name}</h3>
+                <h3 class="sub-headings projects-heading">${p.name}</h3>
+                <p class="projects-p">${p.description}</p>
+                <a class="project-link" href="${p.url}"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
             </div>
-            ${p.img}
-        </div>`
+            <img class="projects-img" src="./assets/${p.img}" alt="${p.alt}">
+        </div>`;
     })
+
+    projects.innerHTML = projects_html;
 
 }
 
@@ -115,3 +119,4 @@ const projects_render = () => {
 // Function calls
 animateGradient();
 skills_render();
+projects_render();
