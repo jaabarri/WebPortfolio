@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/f19b1cb9b4.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module" defer></script>
     <title>Jacob's Web Portfolio</title>
 </head>
 <body>
@@ -28,10 +28,6 @@
         </nav>
     </header>
 
-
-    
-
-
     <main> 
 
         <section class="hero-section">
@@ -46,16 +42,45 @@
                     <img src="./assets/cover_photo.png" alt="Portrait Photo of Jacob">
                 </div>
 
-                <h3>Front-End Developer</h3>
+                <h3 class="sub-headings">Front-End Developer</h3>
                 <p>I am a passionate junior front-end developer based in the Bay Area, with a degree in Art & Design: Games and Playable Media from UCSC. I'm deeply committed to creating visually stunning websites and engaging designs, and I am always eager to learn and grow in the field.</p>
             </div>
         </section>
 
         <section class="about-section">
-            <h4>About Me</h4>
+            <h2 class="sections">About Me</h2>
             <div class="bottom-border"></div>
 
+            <div class="about-container">
+                <h3 class="sub-headings about-headings">Background</h3>
+                <p class="about-p">I specialize in developing accessible, interactive web applications, focusing on intuitive user interfaces and clean code. During my time at UCSC, I explored game design and user experience principles, which I now apply to web development. I’ve collaborated on various web projects, contributing to everything from HTML layouts to JavaScript-based interactivity.</p>
+                <div class="divider"></div>
+
+                <h3 class="sub-headings about-headings">Technical Skills</h3>
+                <div id="technical-skills" class="skills-box"></div>
+                <div class="divider"></div>
+
+                <h3 class="sub-headings about-headings">Soft Skills</h3>
+                <div id="soft-skills" class="skills-box"></div>
+                <div class="divider"></div>
+
+                <h3 class="sub-headings about-headings"> Goals </h3>
+                <p class="about-p">My goal is to create web experiences that not only look great but also provide value to users. I believe in a user-first approach, where every design decision is made to enhance usability and accessibility. I am constantly learning and experimenting with new technologies to keep my skills sharp and to ensure I am delivering the best possible solutions to the projects I work on.</p>
+            </div>
+
         </section>
+
+        <section class="projects-section">
+            <h2 class="sections">Projects</h2>
+            <div class="bottom-border"></div>
+
+            <div id="projects-container"></div>
+
+
+
+
+        </section>
+
 
     </main>
 

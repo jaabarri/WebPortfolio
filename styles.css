@@ -129,6 +129,12 @@ nav {
     width: 100%;
 }
 
+.sub-headings {
+    color: #00abe4;
+    font-size: 1em;
+    font-weight: 100;
+}
+
 .hero-container h1 {
     margin: .55em 0em .35em 0em;
     font-weight: 100;
@@ -144,9 +150,6 @@ nav {
 
 .hero-container h3 {
     margin: 2em 0em .35em 0em;
-    color: #00abe4;
-    font-size: 1em;
-    font-weight: 100;
 }
 
 .img-border {
@@ -199,7 +202,7 @@ nav {
 }
 
 
-.about-section h4 {
+.sections{
     text-align: center;
     margin: 2em 0 .5em 0;
     font-size: 2rem;
@@ -207,11 +210,64 @@ nav {
     color: #00abe4;
 }
 
+.about-container h4 {
+    text-align: center;
+}
+
 .bottom-border {
     width: 70%;
     display: block;
-    margin: 0em auto;
+    margin: 0em auto 3em auto;
     border-top: #00abe4 .5px solid;
+}
+
+.about-headings {
+    margin: 2em 0em .5em 0em;
+}
+
+.divider {
+    display: block;
+    margin: 2em auto 3em auto;
+    border-bottom: #00abe4 .5px solid;
+    width: 18%;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin: .6em;
+    border-radius: 5px;
+    background: #223247;
+    transition: transform .2s;
+}
+.skill-box:hover {
+    transform: scale(1.1);
+}
+
+
+
+.about-p {
+    padding: .5em;
+    margin: 0em .5em;
+    line-height: 1.5em;
+}
+
+.icon-divider {
+    height: 50%;
+    border-left: aliceblue .1em solid;
+    margin: 0em .4em;
+    opacity: 20%;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    cursor: default;
+} 
+
 
 
 

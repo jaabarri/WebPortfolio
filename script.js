@@ -1,7 +1,13 @@
+import { skills_data, projects_data } from "./data.js";
+
 const toggle_bar = document.querySelector('.toggle-bar');
 const toggle_bar_top = document.querySelector('.toggle-top-bar');
 const toggle_bar_bottom = document.querySelector('.toggle-bottom-bar');
 const canvas = document.getElementById('circle-gradient');
+const tech_skills = document.getElementById('technical-skills')
+const soft_skills = document.getElementById('soft-skills');
+const projects = document.getElementById('projects-container')
+
 
 // Toggle for Mobile menu
 toggle_bar.addEventListener('click', () => {
@@ -10,9 +16,7 @@ toggle_bar.addEventListener('click', () => {
 })
 
 
-
-
-//  Canvas Circle properties
+//  ---------- Canvas Circle properties ----------
 const ctx = canvas.getContext('2d');
 
 // Gradient properties
@@ -63,5 +67,51 @@ function animateGradient() {
     requestAnimationFrame(animateGradient);
 }
 
-// Start the animation
+
+// Skills Section in the About me section portion
+const skills_render = () => {
+    let tech_html = ``;
+    let soft_html = ``;
+
+    skills_data.forEach(s => {
+        if(s.type === 'tech') {
+            tech_html += `
+            <div class="skill-box">
+                ${s.icon}
+                <div class='icon-divider'></div>
+                <p>${s.skill}</p>
+            </div>`;
+        } else if(s.type === 'soft'){
+            soft_html += `
+            <div class="skill-box">
+                ${s.icon}
+                <div class='icon-divider'></div>
+                <p>${s.skill}</p>
+            </div>`;
+        }
+    })
+
+    tech_skills.innerHTML = tech_html;
+    soft_skills.innerHTML = soft_html;
+}
+
+const projects_render = () => {
+    let projects_html = ``;
+
+    projects_data.forEach(p => {
+        projects_html += `
+        <div class="projects">
+            <div>
+                <h3>${p.name}</h3>
+            </div>
+            ${p.img}
+        </div>`
+    })
+
+}
+
+
+
+// Function calls
 animateGradient();
+skills_render();
