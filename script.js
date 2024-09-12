@@ -107,6 +107,7 @@ const projects_render = () => {
                 <a class="project-link" href="${p.url}"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
             </div>
             <img class="projects-img" src="./assets/${p.img}" alt="${p.alt}">
+            <div class="divider"></div>
         </div>`;
     })
 
