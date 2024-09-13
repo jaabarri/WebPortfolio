@@ -265,7 +265,6 @@ nav {
     cursor: default;
 } 
 
-
 /* ---------- Projects Section ---------- */
 
 .project-section {
@@ -297,14 +296,85 @@ nav {
     width: 35%;
     border-radius: 40px;
     box-shadow: 2px 2px 13px rgba(102, 184, 194, 0.2);
+    transition: transform .2s;
+}
+
+.project-link::hover{
+    transform: scale(1.1);
 }
 
 .projects-img {
     margin: 1em 0em;
     width: 100%;
     border-radius: 5px;
-    box-shadow: 2px 2px 13px rgba(102, 184, 194, 0.6);
+    box-shadow: 2px 2px 13px rgba(102, 184, 194, 0.4);
 }
+
+/* ---------- Contact ---------- */
+
+.contact-container {
+    color: aliceblue;
+    border: rgba(0, 171, 228, .7) solid 2px;
+    box-shadow: 2px 2px 13px rgba(102, 184, 194, 0.2);
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 2.5em;
+}
+
+.contact-container p {
+    text-align: center;
+    padding: 2em;
+    margin: .2em 0em;
+    font-size: .9rem
+}
+
+.resume-link {
+    display: block; 
+    text-align: center;
+    border: 1px solid #00abe4;
+    margin: 1em auto;
+    padding: 1em;
+    width: 30%;
+    text-decoration: none;
+    color: #00abe4;
+    border-radius: 10px;
+
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: .2em 0em 1em 0em;
+    padding: .1em 1em;
+}
+
+.icons-link{
+    color: #00abe4;
+    text-decoration: none;
+}
+
+.icons-container i{
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+footer {
+    display: block;
+    margin: 2.5em auto 0em auto;
+    border-top: solid 1px #00abe4;
+    width: 92%;
+    color: aliceblue;
+    font-size: .65rem;
+}
+
+footer p{
+    text-align: center;
+    padding: 2em;
+    margin: 1em 1em;
+}
+
+
 
 
 

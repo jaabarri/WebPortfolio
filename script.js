@@ -104,7 +104,7 @@ const projects_render = () => {
             <div>
                 <h3 class="sub-headings projects-heading">${p.name}</h3>
                 <p class="projects-p">${p.description}</p>
-                <a class="project-link" href="${p.url}"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                <a class="project-link" target="_blank" href="${p.url}"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
             </div>
             <img class="projects-img" src="./assets/${p.img}" alt="${p.alt}">
             <div class="divider"></div>

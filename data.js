@@ -43,5 +43,5 @@ export const projects_data = [
         alt: 'Netdara Homepage image',
         description: 'I contributed to the development of a website for Netdara, a small startup focused on creating websites for other businesses. It was a great opportunity to collaborate on building a user-friendly and effective online presence to help them grow their client base.',
         url: 'https://www.netdara.com/',
-    }
+    },
 ];
