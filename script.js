@@ -4,15 +4,23 @@ const toggle_bar = document.querySelector('.toggle-bar');
 const toggle_bar_top = document.querySelector('.toggle-top-bar');
 const toggle_bar_bottom = document.querySelector('.toggle-bottom-bar');
 const canvas = document.getElementById('circle-gradient');
-const tech_skills = document.getElementById('technical-skills')
+const tech_skills = document.getElementById('technical-skills');
 const soft_skills = document.getElementById('soft-skills');
-const projects = document.getElementById('projects-container')
+const projects = document.getElementById('projects-container');
+
+const mobile_menu = document.querySelector('.mobile-nav');
+const mobile_links = document.querySelectorAll('.link')
 
 
 // Toggle for Mobile menu
 toggle_bar.addEventListener('click', () => {
+    mobile_menu.classList.toggle('is-active');
+    mobile_links.forEach(link => {
+        link.classList.toggle('link-is-active');
+    });
     toggle_bar_top.classList.toggle('toggle-top-bar-active');
     toggle_bar_bottom.classList.toggle('toggle-bottom-bar-active');
+
 })
 
 
