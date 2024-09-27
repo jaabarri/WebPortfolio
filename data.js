@@ -33,6 +33,11 @@ export const skills_data = [
         type: 'soft',
         skill: 'Detail-Oriented',
         icon: '<i class="fa-solid fa-magnifying-glass"></i>',
+    },
+    {
+        type: 'tech',
+        skill: 'Bootsrap',
+        icon: '<i class="fa-brands fa-bootstrap"></i>'
     }
 ];
 

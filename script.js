@@ -1,28 +1,39 @@
 import { skills_data, projects_data } from "./data.js";
 
+
+// Toggle bar elements
 const toggle_bar = document.querySelector('.toggle-bar');
 const toggle_bar_top = document.querySelector('.toggle-top-bar');
 const toggle_bar_bottom = document.querySelector('.toggle-bottom-bar');
+
 const canvas = document.getElementById('circle-gradient');
+
+// Skills/About elements
 const tech_skills = document.getElementById('technical-skills');
 const soft_skills = document.getElementById('soft-skills');
+
+// Project elements/container
 const projects = document.getElementById('projects-container');
 
+// Mobile Menu Navigation elements
 const mobile_menu = document.querySelector('.mobile-nav');
-const mobile_links = document.querySelectorAll('.link')
+const mobile_links = document.querySelectorAll('.link');
 
 
 // Toggle for Mobile menu
-toggle_bar.addEventListener('click', () => {
+const toggleMenu = () => {
     mobile_menu.classList.toggle('is-active');
     mobile_links.forEach(link => {
         link.classList.toggle('link-is-active');
     });
     toggle_bar_top.classList.toggle('toggle-top-bar-active');
     toggle_bar_bottom.classList.toggle('toggle-bottom-bar-active');
+}
 
+toggle_bar.addEventListener('click', toggleMenu);
+mobile_links.forEach(link => {
+    link.addEventListener('click', toggleMenu);
 })
-
 
 //  ---------- Canvas Circle properties ----------
 const ctx = canvas.getContext('2d');
@@ -31,7 +42,6 @@ const ctx = canvas.getContext('2d');
 let angle = 0;
 const gradientRadius = 100;
 const circleRadius = 150;
-const colorShiftSpeed = 0.01;
 
 function animateGradient() {
     // Clear the canvas before drawing
