@@ -212,12 +212,10 @@ ul li a{
 }
 
 .container-left {
-    border: solid 1px red;
     margin: .25em 0em;
 }
 
 .container-right  {
-    border: solid 1px green;
     margin: .25em 0em 1em 0em;
     width: 100%;
 
